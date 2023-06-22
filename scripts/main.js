@@ -208,5 +208,4 @@ if (userInput === "marketing" || userInput === "1") {
     document.getElementById("error-message").textContent = "Ongeldige invoer. Ververs de pagina en probeer het opnieuw.";
 }
 
-// document.getElementById('role-title').textContent = 'banaan!';
 
