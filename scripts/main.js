@@ -92,28 +92,24 @@ if (userInput === "marketing" || userInput === "1") {
             console.log("Je koos " + departments.marketing.jobs[0].title + ". " + departments.marketing.jobs[0].description);
 
             document.getElementById("role-title").textContent = departments.marketing.jobs[0].title;
-            document.getElementById("department-description").textContent = departments.marketing.description;
             document.getElementById("role-description").textContent = departments.marketing.jobs[0].description;
             break;
         case "1":
             console.log("Je koos " + departments.marketing.jobs[1].title + ". " + departments.marketing.jobs[1].description);
 
             document.getElementById("role-title").textContent = departments.marketing.jobs[1].title;
-            document.getElementById("department-description").textContent = departments.marketing.description;
             document.getElementById("role-description").textContent = departments.marketing.jobs[1].description;
             break;
         case "2":
             console.log("Je koos " + departments.marketing.jobs[2].title + ". " + departments.marketing.jobs[2].description);
 
             document.getElementById("role-title").textContent = departments.marketing.jobs[2].title;
-            document.getElementById("department-description").textContent = departments.marketing.description;
             document.getElementById("role-description").textContent = departments.marketing.jobs[2].description;
             break;
         case "3":
             console.log("Je koos " + departments.marketing.jobs[3].title + ". " + departments.marketing.jobs[3].description)
 
             document.getElementById("role-title").textContent = departments.marketing.jobs[3].title;
-            document.getElementById("department-description").textContent = departments.marketing.description;
             document.getElementById("role-description").textContent = departments.marketing.jobs[3].description;
             break;
         default:
@@ -121,6 +117,8 @@ if (userInput === "marketing" || userInput === "1") {
             document.getElementById("error-message").textContent = "Ongeldige invoer. Ververs de pagina en probeer het opnieuw.";
             break;
     }
+    document.getElementById("department-description").textContent = departments.marketing.description;
+
 } else if (userInput === "sales" || userInput === "2") {
     console.log("Je koos " + userInput + ". " + departments.sales.description);
     userInput = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
@@ -133,28 +131,24 @@ if (userInput === "marketing" || userInput === "1") {
             console.log("Je koos " + departments.sales.jobs[0].title + ". " + departments.sales.jobs[0].description);
 
             document.getElementById("role-title").textContent = departments.sales.jobs[0].title;
-            document.getElementById("department-description").textContent = departments.sales.description;
             document.getElementById("role-description").textContent = departments.sales.jobs[0].description;
             break;
         case "1":
             console.log("Je koos " + departments.sales.jobs[1].title + ". " + departments.sales.jobs[1].description);
 
             document.getElementById("role-title").textContent = departments.sales.jobs[1].title;
-            document.getElementById("department-description").textContent = departments.sales.description;
             document.getElementById("role-description").textContent = departments.sales.jobs[1].description;
             break;
         case "2":
             console.log("Je koos " + departments.sales.jobs[2].title + ". " + departments.sales.jobs[2].description);
 
             document.getElementById("role-title").textContent = departments.sales.jobs[2].title;
-            document.getElementById("department-description").textContent = departments.sales.description;
             document.getElementById("role-description").textContent = departments.sales.jobs[2].description;
             break;
         case "3":
             console.log("Je koos " + departments.sales.jobs[3].title + ". " + departments.sales.jobs[3].description)
 
             document.getElementById("role-title").textContent = departments.sales.jobs[3].title;
-            document.getElementById("department-description").textContent = departments.sales.description;
             document.getElementById("role-description").textContent = departments.sales.jobs[3].description;
             break;
         default:
@@ -162,6 +156,8 @@ if (userInput === "marketing" || userInput === "1") {
             document.getElementById("error-message").textContent = "Ongeldige invoer. Ververs de pagina en probeer het opnieuw.";
             break;
     }
+    document.getElementById("department-description").textContent = departments.sales.description;
+
 } else if (userInput === "customer-service" || userInput === "customerservice" || userInput === "3") {
     console.log("Je koos " + userInput + ". " + departments['customer-service'].description);
     userInput = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
@@ -174,28 +170,24 @@ if (userInput === "marketing" || userInput === "1") {
             console.log("Je koos " + departments['customer-service'].jobs[0].title + ". " + departments['customer-service'].jobs[0].description);
 
             document.getElementById("role-title").textContent = departments['customer-service'].jobs[0].title;
-            document.getElementById("department-description").textContent = departments['customer-service'].description;
             document.getElementById("role-description").textContent = departments['customer-service'].jobs[0].description;
             break;
         case "1":
             console.log("Je koos " + departments['customer-service'].jobs[1].title + ". " + departments['customer-service'].jobs[1].description);
 
             document.getElementById("role-title").textContent = departments['customer-service'].jobs[1].title;
-            document.getElementById("department-description").textContent = departments['customer-service'].description;
             document.getElementById("role-description").textContent = departments['customer-service'].jobs[1].description;
             break;
         case "2":
             console.log("Je koos " + departments['customer-service'].jobs[2].title + ". " + departments['customer-service'].jobs[2].description);
 
             document.getElementById("role-title").textContent = departments['customer-service'].jobs[2].title;
-            document.getElementById("department-description").textContent = departments['customer-service'].description;
             document.getElementById("role-description").textContent = departments['customer-service'].jobs[2].description;
             break;
         case "3":
             console.log("Je koos " + departments['customer-service'].jobs[3].title + ". " + departments['customer-service'].jobs[3].description)
 
             document.getElementById("role-title").textContent = departments['customer-service'].jobs[3].title;
-            document.getElementById("department-description").textContent = departments['customer-service'].description;
             document.getElementById("role-description").textContent = departments['customer-service'].jobs[3].description;
             break;
         default:
@@ -203,6 +195,8 @@ if (userInput === "marketing" || userInput === "1") {
             document.getElementById("error-message").textContent = "Ongeldige invoer. Ververs de pagina en probeer het opnieuw.";
             break;
     }
+    document.getElementById("department-description").textContent = departments['customer-service'].description;
+
 } else {
     console.error("Ongeldige keuze. Ververs de pagina en probeer het opnieuw")
     document.getElementById("error-message").textContent = "Ongeldige invoer. Ververs de pagina en probeer het opnieuw.";
